@@ -1,6 +1,6 @@
-import {Song, insertSongList, insertFavoriteSong} from './util.js';
+// import {Song, insertSongList, insertFavoriteSong} from './util.js';
 
-export default function setupSongList(filteredSongSection, favoriteSongSection) {
+function setupSongList(filteredSongSection, favoriteSongSection) {
     let songList = [
         new Song('Artist-Jazz', 'Song-Jazz-1', 'Album-Jazz-1', 'Jazz', '1:23', '1', './images/image1.jpg'),
         new Song('Artist-Jazz', 'Song-Jazz-2', 'Album-Jazz-1', 'Jazz', '2:34', '2', './images/image2.jpg'),
