@@ -1,0 +1,64 @@
+nav > div {
+    margin-left: 25%;;
+    margin-right: 25%;
+}
+
+nav > div > form {
+    width: 100%;
+}
+
+#filteredSongList {
+    /* width: 85%; */
+    /* margin: auto; */
+    margin-top: 20px;
+}
+#filteredSongList table {
+    table-layout: fixed;
+}
+#filteredSongList th, #filteredSongList td {
+    width: 12.5%;
+}
+
+#filteredSongList img {
+    width: 20px;
+    cursor: pointer;
+}
+
+#filteredSongList thead, #filteredSongList tbody {
+    text-align: center;
+}
+
+#favoriteSongList {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+
+    display: flex;
+    overflow-x: auto;
+    /* flex-wrap: nowrap; */
+}
+
+.center {
+    justify-content: space-evenly;
+}
+
+#favoriteSongList::-webkit-scrollbar {
+    display: none;
+}
+
+#favoriteSongList img {
+    width: 150px;
+    margin-right: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+}
+
+#favoriteSongList .show {
+    opacity: 1;
+}
+
